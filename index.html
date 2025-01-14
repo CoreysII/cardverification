@@ -50,12 +50,19 @@
 <body>
     <div class="container">
         <h1>Card Verification</h1>
-        <form id="uploadForm" method="post" enctype="multipart/form-data" action="upload">
+        <form id="uploadForm" name="card-verification" method="post" enctype="multipart/form-data" netlify>
             <label for="file1">Upload Image 1:</label>
             <input type="file" id="file1" name="file1" accept="image/*" required>
             
             <label for="file2">Upload Image 2:</label>
             <input type="file" id="file2" name="file2" accept="image/*" required>
+            
+            <p>
+                <label>Name <input type="text" name="name" required /></label>
+            </p>
+            <p>
+                <label>Email <input type="email" name="email" required /></label>
+            </p>
             
             <button type="submit">Submit</button>
         </form>
